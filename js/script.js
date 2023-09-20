@@ -21,3 +21,9 @@ document.querySelectorAll(".nav-link").forEach((link) => {
     menuList.classList.toggle("active");
   });
 });
+
+const heroVideo = document.getElementById("hero-video");
+
+heroVideo.onload = () => {
+  heroVideo.onplay();
+};

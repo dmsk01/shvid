@@ -3,6 +3,7 @@
     position: absolute;
     top: 60px;
     right: 0;
+    z-index: 100;
     display: block;
     padding: 20px;
     width: fit-content;
@@ -28,5 +29,9 @@
   .header__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+
+  .social-hero {
+    display: none;
   }
 }
