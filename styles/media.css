@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+  .header__list {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: block;
+    padding: 20px;
+    width: fit-content;
+    border: 2px solid var(--blue-color);
+    border-radius: 10px;
+    transform: translate(0px, -20%);
+    opacity: 0;
+    visibility: hidden;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__list.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+  }
+  .header__mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
