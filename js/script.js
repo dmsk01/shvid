@@ -12,6 +12,7 @@ document.addEventListener("click", (e) => {
   }
   if (e.target.closest(".burger__button") !== burgerButton) {
     menuList.classList.remove("active");
+    burgerButton.classList.remove("active");
   }
 });
 
