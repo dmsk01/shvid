@@ -23,8 +23,6 @@
   }
   .header__mobile {
     display: flex;
-    max-width: 70%;
-    margin: 0 auto;
     width: 100%;
   }
 
@@ -76,11 +74,5 @@
 
   .social-hero {
     display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .header__mobile {
-    max-width: none;
   }
 }
