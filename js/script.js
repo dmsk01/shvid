@@ -28,3 +28,11 @@ const heroVideo = document.getElementById("hero-video");
 heroVideo.onload = () => {
   heroVideo.onplay();
 };
+
+// Hero video ====
+
+const heroVideoButton = document.getElementById("hero-video-button");
+
+heroVideoButton.addEventListener("click", () => {
+  console.log("click");
+});

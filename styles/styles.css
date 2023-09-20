@@ -229,10 +229,37 @@ body {
   align-items: center;
 }
 
+.info-hero__video {
+  transform: translate(65px, 0px);
+}
+
 .info-hero__skills {
   text-align: right;
   margin-bottom: 50px;
 }
 .info-hero__skill {
   line-height: 19px;
+}
+
+.video-hero__button svg stop {
+  transition: all 0.3s ease 0s;
+}
+.video-hero__button:hover .stop-start {
+  stop-color: #0086ff;
+}
+.video-hero__button:hover .stop-end {
+  stop-color: #ffffff;
+}
+
+.play-triangle-out,
+.play-triangle-in {
+  transition: all 0.3s ease 0s;
+}
+
+.video-hero__button:hover .play-triangle-out {
+  stroke: var(--white-color);
+}
+.video-hero__button:hover .play-triangle-in {
+  stroke: var(--white-color);
+  fill: var(--white-color);
 }

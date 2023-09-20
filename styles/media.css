@@ -31,6 +31,22 @@
     margin-bottom: 15px;
   }
 
+  .person-block__surname {
+    transform: translate(0px, 0px);
+  }
+
+  .info-hero__video {
+    transform: translate(0px, 0px);
+  }
+
+  .info-hero__person {
+    margin-bottom: 15px;
+  }
+
+  .info-hero__skills {
+    text-align: center;
+  }
+
   .social-hero {
     display: none;
   }
