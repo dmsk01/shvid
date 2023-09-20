@@ -18,8 +18,8 @@ document.addEventListener("click", (e) => {
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", (e) => {
-    burgerButton.classList.toggle("active");
-    menuList.classList.toggle("active");
+    burgerButton.classList.remove("active");
+    menuList.classList.remove("active");
   });
 });
 
