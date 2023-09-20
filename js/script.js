@@ -36,3 +36,6 @@ const heroVideoButton = document.getElementById("hero-video-button");
 heroVideoButton.addEventListener("click", () => {
   console.log("click");
 });
+
+// const instance = new FsLightbox();
+// instance.props.sources = [document.getElementById("vimeo")];
