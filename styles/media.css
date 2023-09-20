@@ -23,12 +23,39 @@
   }
   .header__mobile {
     display: flex;
+    max-width: 70%;
+    margin: 0 auto;
     width: 100%;
   }
 
   .header__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+
+  .hero__container {
+    padding: 25px 0 50px;
+    position: relative;
+  }
+
+  .hero__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero__bg {
+    display: inline-block;
+    position: static;
+    height: 220px;
+    transform: translate(0px, 0px);
+  }
+
+  .hero__info {
+    margin-bottom: 100px;
+  }
+
+  .hero__nav {
+    display: block;
   }
 
   .person-block__surname {
