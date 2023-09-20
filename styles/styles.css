@@ -91,6 +91,12 @@ body {
 .header__item:not(:last-child) {
   margin-right: 20px;
 }
+.header__link {
+  transition: color 0.4s ease 0s;
+}
+.header__link:hover {
+  color: var(--blue-color);
+}
 
 .header__mobile {
   display: none;
@@ -202,6 +208,16 @@ body {
 }
 .social-hero__item:not(:last-child) {
   margin-right: 8px;
+}
+
+.social-hero__link svg g,
+.social-hero__link svg path {
+  transition: opacity 0.4s ease 0s;
+}
+
+.social-hero__link:hover svg g,
+.social-hero__link:hover svg path {
+  opacity: 1;
 }
 
 .info-hero__person {
