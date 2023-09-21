@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/null.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="preload" href="fonts/Hughs.woff2" as="font" />
+    <link rel="preload" href="fonts/Hughs.woff" as="font" />
 
     <script src="./js/fslightbox.js" defer></script>
     <script src="./js/script.js" defer></script>
@@ -89,10 +91,10 @@
           <div class="hero__wrap">
             <div class="hero__container">
               <div class="hero__info info-hero">
-                <div class="info-hero__person person-block">
+                <h2 class="info-hero__person person-block title">
                   <span class="person-block__name">Vladimir</span>
                   <span class="person-block__surname">Shvidkov</span>
-                </div>
+                </h2>
                 <ul class="info-hero__skills">
                   <li class="info-hero__skill">Director of Photography</li>
                   <li class="info-hero__skill">Operator</li>
@@ -185,7 +187,132 @@
             </div>
           </div>
         </section>
-        <section id="works" class="works"></section>
+        <section id="works" class="works">
+          <div class="works__container">
+            <div class="works__wrap">
+              <h2 class="works__title title">Works</h2>
+              <ul class="works__body">
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/01.jpg" alt="Метеорит" />
+                      </div>
+                      <div class="case__description case__description_film">
+                        <h3 class="case__name">Метеорит</h3>
+                        <span class="case__type">к/м. фильм</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/02.jpg" alt="Жажда" />
+                      </div>
+                      <div class="case__description case__description_film">
+                        <h3 class="case__name">Жажда</h3>
+                        <span class="case__type">к/м. фильм</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/03.jpg" alt="EXPERIENCE" />
+                      </div>
+                      <div class="case__description case__description_art">
+                        <h3 class="case__name">EXPERIENCE</h3>
+                        <span class="case__type">творческая работа</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/04.jpg" alt="Дриммейкер" />
+                      </div>
+                      <div class="case__description case__description_teaser">
+                        <h3 class="case__name">Дриммейкер</h3>
+                        <span class="case__type">тизер п/м. фильма</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/05.jpg" alt="Народное искусство" />
+                      </div>
+                      <div class="case__description case__description_art">
+                        <h3 class="case__name">Народное искусство</h3>
+                        <span class="case__type">творческая работа</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case case_underlying">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/06.jpg" alt="Кибердемон" />
+                      </div>
+                      <div class="case__description case__description_art">
+                        <h3 class="case__name">Кибердемон</h3>
+                        <span class="case__type">творческая работа</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case case_underlying">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/07.jpg" alt="Start of the End" />
+                      </div>
+                      <div class="case__description case__description_clip">
+                        <h3 class="case__name">Start of the End</h3>
+                        <span class="case__type">музыкальный клип</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/08.jpg" alt="Всё зависит от тебя" />
+                      </div>
+                      <div class="case__description case__description_clip">
+                        <h3 class="case__name">Всё зависит от тебя</h3>
+                        <span class="case__type">социальный ролик</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="works__case case">
+                  <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&controls=0&mute=1" id="hero-video-button" type="button" class="case__link">
+                    <div class="case__inner">
+                      <div class="case__preview">
+                        <img src="images/works/09.jpg" alt="ТранспАрт" />
+                      </div>
+                      <div class="case__description case__description_teaser">
+                        <h3 class="case__name">ТранспАрт</h3>
+                        <span class="case__type">промо фестиваля</span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
         <section id="stills" class="stills"></section>
         <section id="contacts" class="contacts"></section>
       </main>

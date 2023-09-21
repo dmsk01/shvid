@@ -63,9 +63,19 @@ body {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+}
+
+.title {
+  font-family: "Hughs";
+  font-size: 48px;
+  color: var(--white-color);
 }
 
 .header {
@@ -253,15 +263,11 @@ body {
 }
 
 .person-block {
-  font-family: "Hughs";
-  font-size: 48px;
-  color: var(--white-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.person-block__name {
-}
+
 .person-block__surname {
   color: var(--blue-color);
   transform: translate(80px, 0px);
@@ -306,4 +312,124 @@ body {
 .video-hero__button:hover .play-triangle-in {
   stroke: var(--white-color);
   fill: var(--white-color);
+}
+
+/* Works section =========================== */
+
+.works {
+  padding-top: 60px;
+  padding-bottom: 250px;
+  position: relative;
+}
+.works__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.works__wrap {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.works__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -5px;
+  /* position: relative; */
+}
+.works__body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -26px);
+  background-image: url("../images/works-line.svg");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.works__case {
+  padding: 0 5px;
+  flex: 0 1 33.333%;
+  max-width: 33.333%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.case {
+}
+
+.case_underlying {
+  pointer-events: revert-layer;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.case:hover .case__description {
+  opacity: 1;
+  visibility: visible;
+}
+.case__link::before {
+}
+.case__inner {
+  position: relative;
+  width: 100%;
+}
+
+.case__preview {
+  position: relative;
+  padding-bottom: calc(200 / 335 * 100%);
+  width: 100%;
+}
+
+.case__preview img {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.case__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4.5px);
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  transition: opacity 0.5s ease 0s, visibility 0.3s ease 0s;
+}
+.case__description_film {
+  background: rgba(35, 1, 1, 0.55);
+}
+.case__description_art {
+  background: rgba(34, 1, 15, 0.55);
+}
+.case__description_teaser {
+  background: rgba(1, 26, 34, 0.55);
+}
+.case__description_clip {
+  background: rgba(7, 1, 34, 0.55);
+}
+.case__name {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+}
+.case__type {
+  font-style: italic;
 }
