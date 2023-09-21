@@ -170,6 +170,10 @@ img {
 }
 
 /* Hero section =====================*/
+.hero {
+  position: relative;
+  z-index: 1;
+}
 
 .hero__wrap {
   position: relative;
@@ -300,6 +304,11 @@ img {
 .video-hero__button:hover .stop-end {
   stop-color: #ffffff;
 }
+
+/* .fslightbox-slide-number-container,
+.fslightbox-slide-btn-container {
+  display: none !important;
+} */
 
 .play-triangle-out,
 .play-triangle-in {

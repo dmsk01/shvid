@@ -1,3 +1,14 @@
+@media (max-width: 1200px) {
+  .works__wrap {
+    max-width: 880px;
+  }
+  .works__body::before {
+    max-width: 976px;
+    transform: translate(-49.5%, -15px);
+    background-size: 976px 1093px;
+    background-image: url("../images/works-line-tablet.svg");
+  }
+}
 @media (max-width: 1024px) {
   .case {
     min-height: 175px;
@@ -8,6 +19,12 @@
     background: none;
     opacity: 50%;
     visibility: visible;
+  }
+}
+@media (max-width: 992px) {
+  .works__body::before {
+    transform: translate(-52%, 0px);
+    background-size: contain;
   }
 }
 @media (max-width: 768px) {
@@ -92,6 +109,13 @@
     max-width: 50%;
     width: 100%;
   }
+  .works__body::before {
+    max-width: 454px;
+    left: 0;
+    transform: translate(0, -17%);
+    background-size: cover;
+    background-image: url("../images/works-line-mobile.svg");
+  }
 }
 @media (max-width: 560px) {
   .works__title {
@@ -121,5 +145,11 @@
   }
   .case__type {
     opacity: 70%;
+  }
+  .works__body::before {
+    max-width:425px;
+    transform: translate(0, -14%);
+    background-size: 425px 2116px;
+    background-image: url("../images/works-line-mobile.svg");
   }
 }
