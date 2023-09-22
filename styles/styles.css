@@ -327,7 +327,7 @@ img {
 
 .works {
   padding-top: 60px;
-  padding-bottom: 250px;
+  padding-bottom: 290px;
   position: relative;
 }
 .works__title {
@@ -448,4 +448,40 @@ img {
 .case__director {
   font-style: italic;
   line-height: 17px;
+}
+
+/* Stills ====================== */
+
+.stills {
+  margin-top: -200px;
+  position: relative;
+  z-index: 1;
+}
+.stills__container {
+}
+.stills__title {
+  transform: translate(20%, 150%);
+}
+.stills__box {
+  display: flex;
+  gap: 6px;
+}
+
+.stills__box_1 {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-end;
+}
+
+.stills__part {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.stills__item_full {
+  flex: 1 1 100%;
+}
+.stills__item_half {
+  flex: 1 1 calc(50% - 6px);
 }

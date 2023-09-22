@@ -21,11 +21,26 @@
     visibility: visible;
     margin-top: 6px;
   }
+  .stills {
+    margin-top: -250px;
+  }
+  .stills__title {
+    transform: translate(15%, 150%);
+  }
 }
 @media (max-width: 992px) {
   .works__body::before {
     transform: translate(-52%, 0px);
     background-size: contain;
+  }
+  .works {
+    padding-bottom: 150px;
+  }
+  .stills {
+    margin-top: -150px;
+  }
+  .stills__title {
+    transform: translate(10%, 150%);
   }
 }
 @media (max-width: 768px) {
