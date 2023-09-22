@@ -19,6 +19,7 @@
     background: none;
     opacity: 50%;
     visibility: visible;
+    margin-top: 6px;
   }
 }
 @media (max-width: 992px) {
@@ -116,6 +117,9 @@
     background-size: cover;
     background-image: url("../images/works-line-mobile.svg");
   }
+  .case__description {
+    margin-top: 0;
+  }
 }
 @media (max-width: 560px) {
   .works__title {
@@ -147,7 +151,7 @@
     opacity: 70%;
   }
   .works__body::before {
-    max-width:425px;
+    max-width: 425px;
     transform: translate(0, -14%);
     background-size: 425px 2116px;
     background-image: url("../images/works-line-mobile.svg");
