@@ -512,7 +512,7 @@ img {
 }
 
 .stills__row_triple {
-  min-width: 1160px;
+  max-width: 1160px;
 }
 
 .stills__col_big {
