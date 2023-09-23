@@ -135,6 +135,10 @@
   .case__description {
     margin-top: 0;
   }
+  .stills__row,
+  .stills__box {
+    display: none;
+  }
 }
 @media (max-width: 560px) {
   .works__title {
