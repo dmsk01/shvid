@@ -120,6 +120,11 @@
   .social-hero {
     display: none;
   }
+
+  .works {
+    padding-bottom: 145px;
+  }
+
   .works__case {
     flex: 0 1 50%;
     max-width: 50%;
@@ -135,17 +140,32 @@
   .case__description {
     margin-top: 0;
   }
+  .stills {
+    margin-top: -80px;
+  }
   .stills__row,
   .stills__box {
     display: none;
   }
+
+  .stills__title {
+    transform: translate(0px, 0px);
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .stills__mobile {
+    display: block;
+  }
 }
 @media (max-width: 560px) {
+  .works__container {
+    padding: 0 40px;
+  }
   .works__title {
     margin-bottom: 55px;
   }
   .works__case {
-    padding: 0 5px;
+    padding: 0;
     flex: 0 1 100%;
     max-width: none;
     width: 100%;
@@ -155,8 +175,14 @@
     display: flex;
     align-items: center;
   }
+
+  .case {
+    min-height: 158px;
+  }
   .case__preview {
-    flex: 1 0 calc(260 / 420 * 100%);
+    flex: 1 0 calc(260 / 400 * 100%);
+    max-width: calc(260 / 400 * 100%);
+    width: 100%;
     padding-bottom: 160px;
   }
   .case__description {
@@ -174,5 +200,25 @@
     transform: translate(0, -14%);
     background-size: 425px 2116px;
     background-image: url("../images/works-line-mobile.svg");
+  }
+}
+
+@media (max-width: 480px) {
+  .works__container {
+    padding: 0 10px;
+  }
+  .case {
+    min-height: 120px;
+  }
+  .case__name,
+  .case__type,
+  .case__director {
+    font-size: 14px;
+  }
+  .case__preview {
+    flex: 70%;
+    max-width: 70%;
+    width: 100%;
+    padding-bottom: 120px;
   }
 }
