@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/media.css" />
     <link rel="stylesheet" href="./styles/swiper.min.css" />
+    <link rel="stylesheet" href="./styles/aos.css" />
 
     <link rel="preconnect" href="fonts/Hughs.woff2" as="font" />
     <link rel="preconnect" href="fonts/Hughs.woff" as="font" />
@@ -15,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,900&family=Red+Hat+Display:ital,wght@1,300;1,700;1,900&display=swap" rel="stylesheet" />
 
+    <script src="./js/aos.js" defer></script>
     <script src="./js/fslightbox.js" defer></script>
     <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/script.js" defer></script>
@@ -97,18 +99,18 @@
           <div class="hero__wrap">
             <div class="hero__container">
               <div class="hero__info info-hero">
-                <h2 class="info-hero__person person-block title">
+                <h2 data-aos="fade-up" class="info-hero__person person-block title">
                   <span class="person-block__name">Vladimir</span>
                   <span class="person-block__surname">Shvidkov</span>
                 </h2>
                 <ul class="info-hero__skills">
-                  <li class="info-hero__skill">Director of Photography</li>
-                  <li class="info-hero__skill">Operator</li>
-                  <li class="info-hero__skill">Cinematographer</li>
+                  <li class="info-hero__skill" data-aos="fade-right" data-aos-delay="0">Director of Photography</li>
+                  <li class="info-hero__skill" data-aos="fade-right" data-aos-delay="200">Operator</li>
+                  <li class="info-hero__skill" data-aos="fade-right" data-aos-delay="400">Cinematographer</li>
                 </ul>
                 <div class="info-hero__video video-hero">
                   <a data-fslightbox="gallery" href="https://youtu.be/blKM9X5UErI?autoplay=1&modestbranding=1&mute=1" id="hero-video-button" type="button" class="video-hero__button">
-                    <svg width="104" height="24" viewBox="0 0 104 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg data-aos="fade-up" data-aos-delay="600" width="104" height="24" viewBox="0 0 104 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M102.419 10.908C102.747 10.7566 102.968 10.44 102.997 10.0799C103.026 9.71981 102.858 9.37213 102.558 9.17041L93.6441 3.17041C93.3858 2.99658 93.0613 2.95294 92.7663 3.05238C92.4713 3.15182 92.2394 3.38298 92.1391 3.67769L88.0534 15.6777C87.9245 16.0563 88.0335 16.4753 88.3307 16.743C88.6278 17.0107 89.0559 17.0756 89.4191 16.908L102.419 10.908Z" stroke="#0276DE" class="play-triangle-out" stroke-width="2" stroke-linejoin="round" />
                       <path d="M97.2236 9.94721C97.3858 9.86612 97.4914 9.70356 97.4995 9.5224C97.5076 9.34125 97.417 9.16989 97.2627 9.0746L94.8342 7.5746C94.7116 7.49892 94.5624 7.47975 94.4247 7.522C94.2871 7.56425 94.1743 7.66382 94.1153 7.7952L92.5439 11.2952C92.4573 11.488 92.5013 11.7145 92.6539 11.8608C92.8064 12.0072 93.0345 12.0417 93.2236 11.9472L97.2236 9.94721Z" fill="#0276DE" class="play-triangle-in" stroke="#0276DE" stroke-linejoin="round" />
                       <path
@@ -131,13 +133,13 @@
               </div>
               <nav class="hero__nav">
                 <ul class="hero__list">
-                  <li class="hero__item">
+                  <li data-aos="zoom-in-down" data-aos-delay="0" class="hero__item">
                     <a href="#stills" class="hero__link nav-link">Stills</a>
                   </li>
-                  <li class="hero__item">
+                  <li data-aos="zoom-in-down" data-aos-delay="200" class="hero__item">
                     <a href="#works" class="hero__link nav-link">Works</a>
                   </li>
-                  <li class="hero__item">
+                  <li data-aos="zoom-in-down" data-aos-delay="400" class="hero__item">
                     <a href="#contacts" class="hero__link nav-link">Contacts</a>
                   </li>
                 </ul>
@@ -196,9 +198,9 @@
         <section id="works" class="works">
           <div class="works__container">
             <div class="works__wrap">
-              <h2 class="works__title title">Works</h2>
+              <h2 data-aos="fade-up" class="works__title title">Works</h2>
               <ul class="works__body">
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -212,7 +214,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/ia7LdjMljGo?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -226,7 +228,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -240,7 +242,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/ia7LdjMljGo?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -254,7 +256,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -268,7 +270,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case case_underlying">
+                <li data-aos="zoom-in" class="works__case case case_underlying">
                   <a data-fslightbox="works" href="https://youtu.be/ia7LdjMljGo?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -282,7 +284,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case case_underlying">
+                <li data-aos="zoom-in" class="works__case case case_underlying">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -296,7 +298,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -310,7 +312,7 @@
                     </div>
                   </a>
                 </li>
-                <li class="works__case case">
+                <li data-aos="zoom-in" class="works__case case">
                   <a data-fslightbox="works" href="https://youtu.be/blKM9X5UErI?modestbranding=1&mute=1" id="hero-video-button" type="button" class="case__link">
                     <div class="case__inner">
                       <div class="case__preview">
@@ -330,216 +332,216 @@
         </section>
         <section id="stills" class="stills">
           <div class="stills__container">
-            <div class="stills__title title">Stills</div>
+            <h2 class="stills__title title" data-aos="fade-up">Stills</h2>
             <div class="stills__box stills__box_1">
               <div class="stills__part stills__part_left">
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/1.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/2.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__part stills__part_right">
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/3.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_half">
+                <div data-aos="zoom-in" class="stills__item stills__item_half">
                   <img src="images/stills/4.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_half">
+                <div data-aos="zoom-in" class="stills__item stills__item_half">
                   <img src="images/stills/5.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__box stills__box_2">
               <div class="stills__part stills__part_end stills__part_left">
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/6.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_half">
+                <div data-aos="zoom-in" class="stills__item stills__item_half">
                   <img src="images/stills/7.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_half">
+                <div data-aos="zoom-in" class="stills__item stills__item_half">
                   <img src="images/stills/8.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__part stills__part_center stills__part_right">
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/9.png" alt="Still" />
                 </div>
-                <div class="stills__item stills__item_full">
+                <div data-aos="zoom-in" class="stills__item stills__item_full">
                   <img src="images/stills/10.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col stills__col_big">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/11.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/12.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col stills__col_big">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/13.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/14.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/15.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_big">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/16.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item stills__item_crop-1">
                   <img src="images/stills/17.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/18.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/19.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/20.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/21.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/22.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/23.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/24.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/25.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/26.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/27.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/28.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/29.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/30.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row stills__row_triple">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/31.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_small">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/32.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/33.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row stills__row_triple">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/34.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/35.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_small">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/36.png" alt="Still" />
                 </div>
               </div>
             </div>
             <div class="stills__row stills__row_triple">
               <div class="stills__col">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/37.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_small">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/38.png" alt="Still" />
                 </div>
               </div>
               <div class="stills__col stills__col_middle">
-                <div class="stills__item">
+                <div data-aos="zoom-in" class="stills__item">
                   <img src="images/stills/39.png" alt="Still" />
                 </div>
               </div>
@@ -547,10 +549,10 @@
           </div>
           <div class="stills__mobile">
             <div class="stills__inner">
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/19.png" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -572,10 +574,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/17.jpg" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -592,10 +594,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/21.jpg" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -617,10 +619,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/30.jpg" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -637,7 +639,7 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -654,7 +656,7 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -671,7 +673,7 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -693,10 +695,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/14.png" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -713,10 +715,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/10.png" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -733,10 +735,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/13.png" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -758,10 +760,10 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/37.png" alt="Still" />
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -783,7 +785,7 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__carousel">
+              <div data-aos="fade-up" class="stills__carousel">
                 <div class="stills__swiper swiper">
                   <div class="stills__swiper-wrapper swiper-wrapper">
                     <div class="stills__swiper-slide swiper-slide">
@@ -800,13 +802,107 @@
                   <div class="stills__swiper-pagination swiper-pagination"></div>
                 </div>
               </div>
-              <div class="stills__picture">
+              <div data-aos="fade-up" class="stills__picture">
                 <img src="images/stills/33.png" alt="Still" />
               </div>
             </div>
           </div>
         </section>
-        <section id="contacts" class="contacts"></section>
+        <section id="contacts" class="contacts">
+          <div class="contacts__container">
+            <h2 class="contacts__title title" data-aos="fade-up">Contacts</h2>
+            <div class="contacts__row">
+              <div data-aos="zoom-in" data-aos-delay="300" class="contacts__photo">
+                <img src="images/photo.png" alt="Vladimir Shvidkov" />
+              </div>
+              <div class="contacts__info">
+                <h2 data-aos="fade-up" class="contacts__person person-block person-block_contacts title">
+                  <span class="person-block__name">Vladimir</span>
+                  <span class="person-block__surname">Shvidkov</span>
+                </h2>
+                <div class="contacts__box">
+                  <div data-aos="fade-right" data-aos-delay="500" class="contacts__line contacts__line_end">
+                    <h5 class="contacts__lable">Phone:</h5>
+                    <a class="contacts__link" href="tel:+79126156933">+7 (912) 615-69-33</a>
+                  </div>
+                  <ul data-aos="fade-up" data-aos-delay="600" class="contacts__social social-contacts">
+                    <li class="social-contacts__item">
+                      <a target="_blank" href="https://t.me/v_shvid" class="social-contacts__link">
+                        <svg class="social-contacts__svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <rect class="social-contacts__rect" t x="1" y="1" width="20" height="20" rx="10" stroke="url(#paint0_linear_609_151)" stroke-width="2" />
+                          <path
+                            class="social-contacts__path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11.8473 8.42881C10.8349 8.85307 8.81149 9.73119 5.77709 11.0631C5.28435 11.2606 5.02624 11.4537 5.00274 11.6425C4.96302 11.9617 5.35971 12.0874 5.8999 12.2585C5.97338 12.2818 6.04952 12.3059 6.12757 12.3315C6.65903 12.5055 7.37393 12.7092 7.74558 12.7172C8.0827 12.7245 8.45897 12.5845 8.87438 12.2971C11.7095 10.369 13.173 9.39439 13.2649 9.37338C13.3298 9.35855 13.4195 9.33991 13.4804 9.39442C13.5412 9.44891 13.5353 9.55212 13.5288 9.57982C13.4895 9.74858 11.9324 11.2072 11.1266 11.962C10.8754 12.1972 10.6972 12.3641 10.6608 12.4022C10.5791 12.4877 10.4959 12.5685 10.4161 12.6461C9.92233 13.1256 9.55206 13.4852 10.4365 14.0725C10.8616 14.3547 11.2018 14.588 11.5411 14.8208C11.9116 15.0751 12.2812 15.3288 12.7594 15.6446C12.8813 15.7251 12.9976 15.8086 13.111 15.89C13.5423 16.1998 13.9298 16.478 14.4084 16.4337C14.6866 16.4079 14.9738 16.1444 15.1197 15.3586C15.4645 13.5013 16.1423 9.47714 16.299 7.81885C16.3128 7.67356 16.2955 7.48763 16.2816 7.40601C16.2678 7.32439 16.2388 7.20809 16.1335 7.122C16.0088 7.02005 15.8163 6.99855 15.7301 7.00007C15.3386 7.00703 14.738 7.21745 11.8473 8.42881Z"
+                            fill="url(#paint1_linear_609_151)" />
+                          <defs>
+                            <linearGradient id="paint0_linear_609_151" x1="-5.47113" y1="-23.1579" x2="22.0005" y2="-23.1381" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white" />
+                              <stop offset="1" stop-color="#0086FF" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_609_151" x1="2.18882" y1="-2.93509" x2="16.3043" y2="-2.92289" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white" />
+                              <stop offset="1" stop-color="#0086FF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <span class="social-contacts__type">@v_shvid</span>
+                      </a>
+                    </li>
+                    <li class="social-contacts__item">
+                      <a target="_blank" href="https://vk.com/v_shvid" class="social-contacts__link">
+                        <svg class="social-contacts__svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <rect class="social-contacts__rect" x="1" y="1" width="20" height="20" rx="5" stroke="url(#paint0_linear_609_130)" stroke-width="2" />
+                          <path
+                            class="social-contacts__path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M17.5028 8.47399C17.5989 8.20077 17.5028 8 17.0456 8H15.5337C15.1493 8 14.972 8.17343 14.8759 8.36468C14.8759 8.36468 14.107 9.96303 13.0179 11.0012C12.6655 11.3018 12.5053 11.3974 12.3131 11.3974C12.217 11.3974 12.0728 11.3018 12.0728 11.0286V8.47399C12.0728 8.14612 11.9663 8 11.6459 8H9.27008C9.02985 8 8.88536 8.15217 8.88536 8.29639C8.88536 8.6072 9.42993 8.67888 9.48606 9.5532V11.4521C9.48606 11.8684 9.39791 11.9439 9.20569 11.9439C8.69315 11.9439 7.44639 10.3384 6.70694 8.5013C6.56203 8.14423 6.41668 8 6.03028 8H4.51837C4.0864 8 4 8.17343 4 8.36468C4 8.70622 4.51257 10.4002 6.38661 12.6406C7.63596 14.1706 9.39621 15 10.998 15C11.959 15 12.0779 14.8158 12.0779 14.4985V13.3421C12.0779 12.9737 12.169 12.9001 12.4733 12.9001C12.6975 12.9001 13.0819 12.9958 13.9789 13.7335C15.0041 14.6078 15.1731 15 15.7497 15H17.2616C17.6935 15 17.9095 14.8158 17.7849 14.4522C17.6486 14.0899 17.1592 13.5643 16.5097 12.9411C16.1573 12.5859 15.6287 12.2034 15.4685 12.0121C15.2443 11.7663 15.3084 11.657 15.4685 11.4384C15.4685 11.4384 17.3106 9.22533 17.5028 8.47399Z"
+                            fill="url(#paint1_linear_609_130)" />
+                          <defs>
+                            <linearGradient id="paint0_linear_609_130" x1="-5.47113" y1="-23.1579" x2="22.0005" y2="-23.1381" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white" />
+                              <stop offset="1" stop-color="#0086FF" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_609_130" x1="0.563157" y1="0.631595" x2="17.8202" y2="0.656172" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white" />
+                              <stop offset="1" stop-color="#0086FF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <span class="social-contacts__type">@v_shvid</span>
+                      </a>
+                    </li>
+                    <li class="social-contacts__item">
+                      <a target="_blank" href="https://www.instagram.com/v_shvid_" class="social-contacts__link">
+                        <svg class="social-contacts__svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                          <path
+                            class="social-contacts__path"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M6.46226 0.0659726C7.63511 0.0122149 8.00895 0 10.9954 0C13.9825 0 14.3557 0.0128247 15.528 0.0659726C16.699 0.119121 17.4986 0.305433 18.198 0.57726C18.9316 0.853456 19.5962 1.28621 20.1454 1.8454C20.7047 2.39461 21.1375 3.05919 21.4136 3.79282C21.6854 4.49224 21.8711 5.29186 21.9249 6.46226C21.9787 7.63511 21.9909 8.00895 21.9909 10.9954C21.9909 13.9819 21.9781 14.3557 21.9249 15.5287C21.8717 16.699 21.6854 17.4986 21.4136 18.198C21.1326 18.9207 20.7563 19.5346 20.1454 20.1454C19.5963 20.7047 18.9316 21.1375 18.198 21.4136C17.4986 21.6854 16.699 21.8711 15.5287 21.9249C14.3557 21.9787 13.9819 21.9909 10.9954 21.9909C8.00895 21.9909 7.63511 21.9781 6.46226 21.9249C5.29186 21.8717 4.49224 21.6854 3.79282 21.4136C3.07017 21.1326 2.45626 20.7563 1.8454 20.1454C1.28611 19.5963 0.853326 18.9316 0.57726 18.198C0.305433 17.4986 0.11973 16.699 0.0659726 15.5287C0.0122149 14.3557 0 13.9825 0 10.9954C0 8.00834 0.0128247 7.63511 0.0659726 6.46288C0.119121 5.29186 0.305433 4.49224 0.57726 3.79282C0.853456 3.05924 1.28621 2.39469 1.8454 1.8454C2.3946 1.28611 3.05918 0.853326 3.79282 0.57726C4.49224 0.305433 5.29186 0.11973 6.46226 0.0659726ZM15.4388 2.04515C14.2794 1.99261 13.9312 1.98101 10.9954 1.98101C8.05965 1.98101 7.71147 1.99261 6.55206 2.04515C5.48 2.09402 4.89786 2.273 4.51057 2.42388C3.99745 2.62302 3.63093 2.86125 3.24609 3.24609C2.86187 3.63093 2.62302 3.99745 2.42388 4.51057C2.273 4.89786 2.09402 5.48 2.04515 6.55206C1.99261 7.71147 1.98101 8.05965 1.98101 10.9954C1.98101 13.9312 1.99261 14.2794 2.04515 15.4388C2.09402 16.5108 2.273 17.093 2.42388 17.4803C2.60003 17.9579 2.88099 18.39 3.24609 18.7448C3.60084 19.1099 4.03294 19.3908 4.51057 19.567C4.89786 19.7179 5.48 19.8968 6.55206 19.9457C7.71147 19.9983 8.05904 20.0099 10.9954 20.0099C13.9318 20.0099 14.2794 19.9983 15.4388 19.9457C16.5108 19.8968 17.093 19.7179 17.4803 19.567C17.9934 19.3679 18.36 19.1297 18.7448 18.7448C19.1099 18.3901 19.3908 17.9579 19.567 17.4803C19.7179 17.093 19.8968 16.5108 19.9457 15.4388C19.9983 14.2794 20.0099 13.9312 20.0099 10.9954C20.0099 8.05965 19.9983 7.71147 19.9457 6.55206C19.8968 5.48 19.7179 4.89786 19.567 4.51057C19.3679 3.99745 19.1297 3.63093 18.7448 3.24609C18.36 2.86187 17.9934 2.62302 17.4803 2.42388C17.093 2.273 16.5108 2.09402 15.4388 2.04515ZM9.59152 14.3849C10.0366 14.5693 10.5136 14.6642 10.9954 14.6642C11.9685 14.6642 12.9016 14.2777 13.5897 13.5897C14.2778 12.9016 14.6643 11.9684 14.6643 10.9954C14.6643 10.0224 14.2778 9.08923 13.5897 8.40119C12.9016 7.71316 11.9685 7.32662 10.9954 7.32662C10.5136 7.32662 10.0366 7.42152 9.59152 7.60589C9.1463 7.79026 8.7419 8.0605 8.40122 8.40119C8.06054 8.74187 7.7903 9.1463 7.60592 9.59142C7.42155 10.0365 7.32666 10.5136 7.32666 10.9954C7.32666 11.4772 7.42155 11.9543 7.60592 12.3995C7.7903 12.8446 8.06054 13.249 8.40122 13.5897C8.7419 13.9303 9.1463 14.2006 9.59152 14.3849ZM6.99914 6.9991C8.05903 5.93921 9.49656 5.34377 10.9954 5.34377C12.4944 5.34377 13.9319 5.93921 14.9918 6.9991C16.0516 8.05899 16.6471 9.49656 16.6471 10.9954C16.6471 12.4943 16.0516 13.9318 14.9918 14.9918C13.9319 16.0516 12.4944 16.6471 10.9954 16.6471C9.49656 16.6471 8.05903 16.0516 6.99914 14.9918C5.93925 13.9318 5.34381 12.4943 5.34381 10.9954C5.34381 9.49656 5.93925 8.05899 6.99914 6.9991ZM17.9003 6.18581C18.1508 5.93527 18.2915 5.59547 18.2915 5.24115C18.2915 4.88683 18.1508 4.54703 17.9003 4.2965C17.6497 4.04596 17.3099 3.90521 16.9556 3.90521C16.6013 3.90521 16.2614 4.04596 16.011 4.2965C15.7604 4.54703 15.6196 4.88683 15.6196 5.24115C15.6196 5.59547 15.7604 5.93527 16.011 6.18581C16.2614 6.43635 16.6013 6.5771 16.9556 6.5771C17.3099 6.5771 17.6497 6.43635 17.9003 6.18581Z"
+                            fill="url(#paint0_linear_609_18)" />
+                          <defs>
+                            <linearGradient id="paint0_linear_609_18" x1="-5.46886" y1="-23.1483" x2="21.9913" y2="-23.1285" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white" />
+                              <stop offset="1" stop-color="#0086FF" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        <span class="social-contacts__type">@v_shvid_</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div data-aos="fade-left" data-aos-delay="500" class="contacts__line">
+                    <h5 class="contacts__lable">Mail:</h5>
+                    <a class="contacts__link" href="mailto:v.shvid@gmail.com">v.shvid@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>

@@ -105,6 +105,17 @@
     transform: translate(0px, 0px);
   }
 
+  .person-block_contacts .person-block__surname {
+    transform: translate(90px, 0px);
+  }
+  .person-block_contacts {
+    transform: translate(-45px, 0px);
+  }
+  .person-block_contacts .person-block__name,
+  .person-block_contacts .person-block__surname {
+    font-size: 64px;
+  }
+
   .info-hero__video {
     transform: translate(0px, 0px);
   }
@@ -155,6 +166,71 @@
   }
   .stills__mobile {
     display: block;
+  }
+  .contacts__row {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .contacts__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts__person {
+    margin-bottom: 25px;
+  }
+  .contacts__social {
+    transform: translate(-20%, 0px);
+    margin-bottom: 40px;
+    order: -1;
+  }
+  .social-contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-contacts__item:nth-child(2) {
+    transform: translate(65px, 0px);
+  }
+  .social-contacts__item:nth-child(3) {
+    transform: translate(130px, 0px);
+  }
+  .contacts__line:last-child {
+    transform: translate(65px, 0px);
+  }
+  .contacts__line_end {
+    align-items: start;
+  }
+  .social-contacts__type {
+    position: relative;
+  }
+  .social-contacts__link {
+    gap: 10px;
+  }
+  .social-contacts__type::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #fff;
+  }
+  .contacts__lable {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .social-contacts__svg {
+    width: 55px;
+    height: 55px;
+  }
+  .social-contacts__type {
+    font-size: 32px;
+  }
+  .contacts__link {
+    line-height: 42px;
+    font-size: 32px;
+  }
+  .contacts__link::before {
+    width: 100%;
   }
 }
 @media (max-width: 560px) {
@@ -220,5 +296,8 @@
     max-width: 70%;
     width: 100%;
     padding-bottom: 120px;
+  }
+  .contacts__line:last-child {
+    transform: translate(0px, 0px);
   }
 }
