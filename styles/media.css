@@ -232,6 +232,9 @@
   .contacts__link::before {
     width: 100%;
   }
+  .contacts__row {
+    transform: translate(-5%, 0px);
+  }
 }
 @media (max-width: 560px) {
   .works__container {
