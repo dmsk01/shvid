@@ -235,6 +235,19 @@
   .contacts__row {
     transform: translate(-5%, 0px);
   }
+  .contacts::before {
+    max-width: 445px;
+    min-height: 618px;
+
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-59%, -23%);
+    background-image: url("../images/contacts/decor-mobile.svg");
+    background-size: 445px 618px;
+  }
+  .contacts__photo img {
+    transform: translate(4%, -5px) scale(1.15);
+  }
 }
 @media (max-width: 560px) {
   .works__container {
@@ -302,5 +315,8 @@
   }
   .contacts__line:last-child {
     transform: translate(0px, 0px);
+  }
+  .contacts::before {
+    display: none;
   }
 }

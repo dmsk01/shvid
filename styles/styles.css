@@ -493,6 +493,7 @@ img {
 }
 
 .stills__part {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -504,6 +505,74 @@ img {
 .stills__part_end {
   justify-content: flex-end;
   text-align: right;
+}
+
+.stills__part_1::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 250px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 8px);
+  background-image: url("../images/stills/stills-1.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.stills__part_2::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 680px;
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, 50%);
+  background-image: url("../images/stills/stills-2.svg");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.stills__item_under {
+  position: relative;
+  z-index: -1;
+}
+
+.stills__item_1::before {
+  content: "";
+  position: absolute;
+  width: 245px;
+  height: 255px;
+  bottom: 0;
+  left: 0;
+  transform: translate(-35%, 0%);
+  background-image: url("../images/stills/stills-3.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.stills__item_2::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 90px;
+  bottom: 0;
+  right: 0;
+  transform: translate(45%, 7%);
+  background-image: url("../images/stills/stills-4.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.stills__item_3::before {
+  content: "";
+  position: absolute;
+  width: 1230px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+  transform: translate(-9%, 7%);
+  background-image: url("../images/stills/stills-5.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px 1080px;
+  z-index: 10;
 }
 
 .stills__item_full {
@@ -528,6 +597,15 @@ img {
   background-repeat: no-repeat;
   background-size: 104px 120px;
 } */
+
+.stills__col_under {
+  position: relative;
+  z-index: -1;
+}
+
+.stills__item {
+  position: relative;
+}
 
 .stills__item img {
   width: 100%;
@@ -646,9 +724,25 @@ img {
   align-items: center;
   gap: 30px;
 }
-.contacts__photo {
+.contacts {
+  position: relative;
 }
-.contacts__info {
+.contacts::before {
+  content: "";
+  position: absolute;
+  max-width: 700px;
+  width: 100%;
+  min-height: 545px;
+
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 28%);
+  background-image: url("../images/contacts/decor.svg");
+  background-size: 700px 545px;
+  background-repeat: no-repeat;
+}
+.contacts__photo img {
+  transform: translate(-10px, -10px);
 }
 .contacts__person {
 }
