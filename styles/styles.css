@@ -817,3 +817,63 @@ img {
 .contacts__link:hover::before {
   width: 100%;
 }
+/* Vimeo lightbox =============== */
+#vimeo-pop-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999999;
+  background: rgba(0, 0, 0, 0.75);
+}
+#vimeo-pop-container div {
+  height: 60vmin;
+  width: 90vw;
+  max-width: 900px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#vimeo-pop-container .vimeo-close {
+  background-color: transparent;
+  cursor: pointer;
+  margin-bottom: 10px;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+#vimeo-pop-container .vimeo-close:before,
+#vimeo-pop-container .vimeo-close:after {
+  content: "";
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: rotate(45deg);
+  transition: 500ms all;
+}
+#vimeo-pop-container .vimeo-close:before {
+  height: 20px;
+  width: 1px;
+  margin-left: -1px;
+  margin-top: -11px;
+}
+#vimeo-pop-container .vimeo-close:after {
+  height: 1px;
+  width: 20px;
+  margin-left: -11px;
+  margin-top: -1px;
+}
+#vimeo-pop-container .vimeo-close:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+#vimeo-pop-container iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* End Vimeo lightbox =============== */
