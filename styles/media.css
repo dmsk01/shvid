@@ -3,10 +3,10 @@
     max-width: 880px;
   }
   .works__body::before {
-    max-width: 976px;
-    transform: translate(-49.5%, -15px);
-    background-size: 976px 1093px;
-    background-image: url("../images/works-line-tablet.svg");
+    /* max-width: 976px; */
+    /* transform: translate(-49.5%, -15px); */
+    /* background-size: 976px 1093px; */
+    /* background-image: url("../images/works-line-tablet.svg"); */
   }
 }
 @media (max-width: 1024px) {
@@ -20,9 +20,6 @@
     opacity: 50%;
     visibility: visible;
     margin-top: 6px;
-  }
-  .stills {
-    margin-top: -250px;
   }
   .stills__title {
     transform: translate(15%, 150%);

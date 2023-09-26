@@ -57,6 +57,8 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// Vimeo player
+
 $("body")
   .on("click", ".vimeo-launch", function () {
     let videoID = $(this).data("vimeo-id"),
