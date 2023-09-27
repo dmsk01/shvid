@@ -399,7 +399,8 @@ img {
   opacity: 1;
   visibility: visible;
 }
-.case__link::before {
+.case__link {
+  width: 100%;
 }
 .case__inner {
   position: relative;

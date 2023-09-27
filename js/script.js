@@ -39,11 +39,6 @@ heroVideoButton.addEventListener("click", () => {
   console.log("click");
 });
 
-fsLightbox.props.disableThumbs = true;
-
-// const instance = new FsLightbox();
-// instance.props.sources = [document.getElementById("vimeo")];
-
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   spaceBetween: 6,
