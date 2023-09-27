@@ -27,7 +27,7 @@
 }
 @media (max-width: 992px) {
   .works__body::before {
-    transform: translate(-52%, 0px);
+    /* transform: translate(-52%, 0px); */
     background-size: contain;
   }
   .works {
@@ -141,9 +141,19 @@
   .works__body::before {
     max-width: 454px;
     left: 0;
-    transform: translate(0, -17%);
-    background-size: cover;
-    background-image: url("../images/works-line-mobile.svg");
+    transform: translate(0%, -17%);
+    background-image: url("../images/works/works-3.svg");
+    z-index: -1;
+  }
+  .works__body::after {
+    max-width: 305px;
+    height: 165px;
+    left: 0;
+    transform: translate(1%, -8%);
+    background-image: url("../images/works/works-6.svg");
+  }
+  .works__case_experience {
+    position: relative;
   }
   .case__description {
     margin-top: 0;
@@ -284,11 +294,48 @@
   .case__type {
     opacity: 70%;
   }
+  .works {
+    margin-bottom: 0;
+    padding-bottom: 120px;
+  }
   .works__body::before {
     max-width: 425px;
-    transform: translate(0, -14%);
-    background-size: 425px 2116px;
-    background-image: url("../images/works-line-mobile.svg");
+    transform: translate(0, -16%);
+  }
+
+  .works__case_experience::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    transform: translate(-5%, 52%);
+    background-image: url("../images/works/works-4.svg");
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .works__case_cyber {
+    position: relative;
+  }
+  .works__case_cyber::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 185px;
+    transform: translate(-5%, 2%);
+    background-image: url("../images/works/works-5.svg");
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .stills {
+    margin-top: -85px;
   }
 }
 
@@ -313,6 +360,10 @@
   .contacts__line:last-child {
     transform: translate(0px, 0px);
   }
+  .works__body::after,
+  .works__body::before,
+  .works__case_experience::before,
+  .works__case_cyber::before,
   .contacts::before {
     display: none;
   }
