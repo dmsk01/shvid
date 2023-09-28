@@ -76,6 +76,7 @@ img {
   font-family: "Hughs";
   font-size: 48px;
   color: var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 .header {
@@ -176,6 +177,10 @@ img {
   transform: translate(0px, 3px);
 }
 
+.main {
+  padding-top: 50px;
+}
+
 /* Hero section =====================*/
 .hero {
   position: relative;
@@ -205,7 +210,7 @@ img {
 }
 
 .hero__container {
-  padding: 155px 0 90px;
+  padding: 200px 0 130px;
   position: relative;
 }
 
@@ -214,6 +219,7 @@ img {
   flex-direction: column;
   position: relative;
   z-index: 1;
+  transform: translate(-40px, 0px);
 }
 
 .hero__nav {
@@ -231,6 +237,7 @@ img {
   position: relative;
   font-weight: 900;
   font-size: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
 .hero__link::before {
@@ -283,6 +290,9 @@ img {
   color: var(--blue-color);
   transform: translate(80px, 0px);
 }
+.person-block__name {
+  transform: translate(-2px, 0px);
+}
 
 .info-hero {
   display: flex;
@@ -291,7 +301,7 @@ img {
 }
 
 .info-hero__video {
-  transform: translate(65px, 0px);
+  transform: translate(55px, 0px);
 }
 
 .info-hero__skills {
