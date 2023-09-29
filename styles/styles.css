@@ -306,6 +306,7 @@ img {
 
 .info-hero__skills {
   text-align: right;
+  font-style: italic;
   margin-bottom: 50px;
 }
 .info-hero__skill {

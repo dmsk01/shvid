@@ -65,6 +65,8 @@
   }
   .header__mobile {
     display: flex;
+    max-width: 75%;
+    margin: 0 auto;
     width: 100%;
   }
 
@@ -92,10 +94,23 @@
 
   .hero__info {
     margin-bottom: 100px;
+    transform: translate(0px, 0px);
   }
 
   .hero__nav {
     display: block;
+  }
+
+  .social-block__link {
+    display: inline-block;
+  }
+  .social-block__link svg {
+    width: 39px;
+    height: 39px;
+  }
+
+  .person-block {
+    font-size: 64px;
   }
 
   .person-block__surname {
@@ -118,11 +133,20 @@
   }
 
   .info-hero__person {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   .info-hero__skills {
     text-align: center;
+    font-size: 20px;
+    margin-bottom: 59px;
+  }
+  .info-hero__skill:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .video-hero__button {
+    transform: scale(1.6);
   }
 
   .social-hero {
