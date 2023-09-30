@@ -42,11 +42,8 @@ heroVideoButton.addEventListener("click", () => {
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   spaceBetween: 6,
-  slidesPerView: 1.2,
+  slidesPerView: "auto",
   centeredSlides: true,
-  centeredSlidesBounds: true,
-
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
