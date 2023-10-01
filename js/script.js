@@ -20,6 +20,17 @@ document.addEventListener("click", (e) => {
 
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = e.target.getAttribute("href");
+    const targetElement = document.getElementById(targetId.substring(1));
+    let scrollToPx = Math.floor(targetElement.offsetTop - 120);
+    if (targetId === "#hero") {
+      scrollToPx = 0;
+    }
+
+    window.scrollTo({ top: scrollToPx, behavior: "smooth" });
+    console.log(targetElement, scrollToPx);
+
     burgerButton.classList.remove("active");
     menuList.classList.remove("active");
   });
