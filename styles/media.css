@@ -10,8 +10,59 @@
   }
 }
 @media (max-width: 1024px) {
+  .title {
+    font-size: 40px;
+  }
+  .header {
+    min-height: 75px;
+  }
+  .header__list {
+    max-width: 725px;
+  }
+  .header__link {
+    font-size: 20px;
+  }
+  .main {
+    padding-top: 75px;
+  }
+  .hero__container {
+    padding: 150px 0 92px;
+  }
+  .info-hero__skills {
+    margin-bottom: 48px;
+  }
+  .info-hero__person {
+    margin-bottom: 22px;
+  }
+  .works {
+    padding-top: 48px;
+    margin-bottom: 11px;
+  }
+  .works__title {
+    margin-bottom: 32px;
+  }
+  .works__body::before {
+    max-width: 618px;
+    transform: translate(-19.5%, -17px);
+    background-size: 618px 553px;
+    background-image: url("../images/works/works-tab-1.svg");
+  }
+  .works__body::after {
+    left: 0;
+    max-width: 370px;
+    max-height: 394px;
+    width: 100%;
+    transform: translate(6%, 36%);
+    background-image: url("../images/works/works-tab-2.svg");
+  }
+  .video-hero__button {
+    transform: scale(1.5);
+  }
   .case {
     min-height: 175px;
+  }
+  .case__name {
+    font-size: 18px;
   }
   .case__description {
     position: relative;
@@ -19,10 +70,142 @@
     background: none;
     opacity: 50%;
     visibility: visible;
-    margin-top: 6px;
+    margin-top: 5px;
+  }
+  .stills {
+    margin-bottom: 19px;
   }
   .stills__title {
-    transform: translate(15%, 150%);
+    transform: translate(21%, 158%);
+  }
+  .stills__row {
+    max-width: 760px;
+  }
+  .stills__part_2::before {
+    transform: translate(72%, 57%);
+  }
+  .stills__item_208 {
+    height: 208px;
+  }
+  .stills__item_135 img {
+    height: 155px;
+    width: 275px;
+  }
+  .stills__item_105 {
+    height: 105px;
+  }
+  .stills__box {
+    max-width: 763px;
+  }
+  .stills__col_40 {
+    flex-basis: 47%;
+    max-width: 47%;
+    width: 100%;
+  }
+  .stills__col_44 {
+    flex-basis: 44%;
+    max-width: 44%;
+    width: 100%;
+  }
+  .stills__col_40 .stills__item img {
+    height: 180px;
+  }
+  .stills__col_big .stills__item img {
+    height: 180px;
+  }
+  .stills__col_middle .stills__item img {
+    height: 180px;
+  }
+  .stills__col_high .stills__item img {
+    height: 198px;
+  }
+  .stills__col_high.stills__col_middle .stills__item img {
+    height: 198px;
+  }
+  .stills__col_middle {
+    flex-basis: 55%;
+    max-width: 55%;
+    width: 100%;
+  }
+  .stills__row_triple {
+    max-width: 915px;
+  }
+  .stills__col .stills__item.stills__item_164 img {
+    height: 164px;
+  }
+  .stills__col .stills__item.stills__item_186 img {
+    height: 186px;
+  }
+  .stills__col .stills__item.stills__item_192 img {
+    height: 192px;
+  }
+  .stills__col .stills__item.stills__item_212 img {
+    height: 212px;
+  }
+  .stills__col .stills__item.stills__item_175 img {
+    height: 175px;
+  }
+  .stills__col .stills__item.stills__item_330 img {
+    max-width: 330px;
+  }
+  .contacts::before {
+    content: "";
+    position: absolute;
+    max-width: 529px;
+    width: 100%;
+    min-height: 422px;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-70%, 17%);
+    background-image: url(../images/contacts/contacts-tab.svg);
+    background-size: 529px 422px;
+    background-repeat: no-repeat;
+  }
+  .contacts__title {
+    padding-top: 5px;
+  }
+  .contacts__photo {
+    height: 270px;
+    width: 272px;
+    max-width: 100%;
+  }
+  .contacts__photo img {
+    transform: translate(-17px, -45px);
+  }
+  .contacts .person-block {
+    font-size: 64px;
+  }
+  .contacts__person {
+    margin-bottom: 25px;
+  }
+  .contacts__info {
+    padding-top: 50px;
+    max-width: 395px;
+    width: 100%;
+  }
+  .contacts__line:not(:last-child) {
+    margin-bottom: 23px;
+  }
+  .contacts__social {
+    margin-bottom: 24px;
+  }
+  .social-contacts__type,
+  .contacts__link {
+    font-size: 20px;
+  }
+  .social-contacts {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .social-contacts__svg {
+    width: 31px;
+    height: 31px;
+  }
+  .person-block__name {
+    transform: translate(-102px, 0px);
+  }
+  .person-block__surname {
+    transform: translate(40px, 0px);
   }
 }
 @media (max-width: 992px) {
@@ -65,9 +248,11 @@
   }
   .header__mobile {
     display: flex;
+    width: 100%;
+  }
+  .header__row {
     max-width: 75%;
     margin: 0 auto;
-    width: 100%;
   }
 
   .header__item:not(:last-child) {
@@ -101,6 +286,10 @@
     display: block;
   }
 
+  .video-hero__button {
+    transform: scale(1.6);
+  }
+
   .social-block__link {
     display: inline-block;
   }
@@ -121,11 +310,18 @@
     transform: translate(100px, 7px);
   }
   .person-block_contacts {
-    transform: translate(-45px, 0px);
+    transform: translate(0px, 0px);
   }
   .person-block_contacts .person-block__name,
   .person-block_contacts .person-block__surname {
     font-size: 64px;
+  }
+  .person-block_contacts .person-block__name {
+    transform: translate(-50px, 0px);
+  }
+
+  .person-block_contacts .person-block__surname {
+    transform: translate(0px, 50px);
   }
 
   .info-hero__video {
@@ -143,10 +339,6 @@
   }
   .info-hero__skill:not(:last-child) {
     margin-bottom: 15px;
-  }
-
-  .video-hero__button {
-    transform: scale(1.6);
   }
 
   .social-hero {
@@ -198,6 +390,9 @@
   }
   .stills__mobile {
     display: block;
+  }
+  .contacts .title {
+    font-size: 48px;
   }
   .contacts__row {
     flex-direction: column;
@@ -273,7 +468,7 @@
 
     bottom: 50%;
     left: 50%;
-    transform: translate(-54%, -28%);
+    transform: translate(-54%, -33%);
     background-image: url("../images/contacts/decor-mobile.svg");
     background-size: 445px 618px;
   }
@@ -288,7 +483,13 @@
     border-radius: 50%;
     overflow: hidden;
     object-fit: contain;
-    transform: translate(-3px, -33px);
+    transform: translate(-3px, -55px);
+  }
+  .person-block__name {
+    transform: translate(-102px, 0px);
+  }
+  .contacts__info {
+    padding-top: 0;
   }
 }
 @media (max-width: 560px) {
@@ -371,6 +572,25 @@
   }
   .stills {
     margin-top: -85px;
+    margin-bottom: 80px;
+  }
+  .contacts__title {
+    transform: translate(10px, -22px);
+  }
+  .contacts__info {
+    transform: translate(0px, -50px);
+  }
+  .contacts__social {
+    transform: translate(-15%, 0px);
+  }
+  .contacts__line {
+    transform: translate(45px, 0px);
+  }
+  .contacts__line:last-child {
+    transform: translate(115px, 5px);
+  }
+  .person-block_contacts .person-block__surname {
+    transform: translate(50px, 10px);
   }
 }
 
