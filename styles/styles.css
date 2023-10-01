@@ -184,7 +184,7 @@ img {
 /* Hero section =====================*/
 .hero {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero__wrap {
@@ -796,6 +796,7 @@ img {
   transform: translate(-5px, -5px);
 }
 .contacts__person {
+  transform: translate(-50px, 0px);
 }
 
 .contacts__line:not(:last-child) {
