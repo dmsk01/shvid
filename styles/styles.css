@@ -404,6 +404,11 @@ img {
   margin-bottom: 10px;
 }
 
+.works__case_above {
+  position: relative;
+  z-index: 1;
+}
+
 .case {
 }
 
@@ -781,6 +786,7 @@ img {
   background-image: url("../images/contacts/decor.svg");
   background-size: 700px 545px;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 .contacts__photo {
   height: 345px;
