@@ -110,6 +110,8 @@ img {
   margin-right: 20px;
 }
 .header__link {
+  font-family: "RedHatDisplay", sans-serif;
+  font-style: italic;
   transition: color 0.4s ease 0s;
 }
 .header__link:hover {
@@ -234,6 +236,8 @@ img {
 }
 
 .hero__link {
+  font-family: "RedHatDisplay", sans-serif;
+  font-style: italic;
   position: relative;
   font-weight: 900;
   font-size: 24px;
@@ -310,6 +314,8 @@ img {
   margin-bottom: 50px;
 }
 .info-hero__skill {
+  font-family: "RedHatDisplay", sans-serif;
+  font-style: italic;
   line-height: 19px;
 }
 
@@ -479,9 +485,11 @@ img {
   font-weight: 900;
   font-size: 20px;
   line-height: 24px;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
 }
 .case__type {
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   line-height: 17px;
 }
@@ -822,14 +830,15 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "RedHatDisplay", sans-serif;
-  font-size: 14px;
   font-style: italic;
+  font-size: 14px;
   line-height: 19px;
 }
 .contacts__link {
   width: fit-content;
   font-weight: 700;
   font-size: 16px;
+  font-family: "RedHatDisplay", sans-serif;
   font-style: italic;
   line-height: 19px;
 }
